@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Hjemme Side</title>
+    <link rel="icon" href="favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/be16f163fe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script type="module" src="/index.js"></script>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html"> <img src="./img/Profile-pic-web.png" alt="Profil-pic"
+                    style="height: 50px;" class="mx-3">Leo Edmund Hole</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarText" style="margin-left: 72%;">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html"><i
+                            class="fa-solid fa-house mx-2"></i>Hjem</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./html/erfaring.html">Erfaring</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./html/kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="img-box">
+            <img class="profile" style="margin-right: 15rem;" src="/img/Profile-pic-web.png" alt="">
+        </div>
+        <div class="text-box">
+            <h1 class="header" style="margin-top: 4rem;">Leo Edmund Hole</h1>
+            <p class="header-text">Hei! Jeg heter Leo og er en elev på Glemmen VGS.</p>
+            <p class="header-text">Jeg er interssert i Grafisk design og medie produksjon.</p>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-dark text-light fixed-bottom">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-3 border-bottom">
+            <!-- Her lager jeg venstre siden i den øverste raden -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Sosialt</span>
+            </div>
+            <!-- Her lager jeg høyre siden i øverste raden på footer -->
+            <div id="socialIcons">
+                <!-- setter in symboler med anchor tag for sisiale medier -->
+                <p>
+                    <a href="https://www.facebook.com/leoedmund.hole/" target="_blank" class="me-4 text-reset">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </p>
+                <p>
+                    <a href="https://github.com/XxLEOHOLxX" target="_blank" class="me-4 text-reset">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </p>
+                <p>
+                    <a href="https://www.linkedin.com/in/leo-edmund-hole-626885259/" target="_blank"
+                        class="me-4 text-reset">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </p>
+            </div>
+        </section>
+
+        <!-- Section: Footer-innhold -->
+        <section class="Footer-innhold">
+            <div class="container text-center text-md-start mt-5">
+
+                <!-- Midterste rad i footer -->
+                <div class="row mt-3">
+                    <!-- Her lager jeg en kollonen som inneholder navn og kort info -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Her stpår det navn og kort info -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Leo Edmund Hole
+                        </h6>
+                        <p>Elev på glemmem og grafisk designer</p>
+                    </div>
+                    <!-- Her lager jeg en kollone som inneholer kontakt informasjon -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Kontakt informasjon i footer -->
+                        <h6 class="text-uppercase fw-bold mb-4">Kontakt meg</h6>
+                        <p><i class="fas fa-home me-3"></i> Fredrikstad, Norge</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            <a class="mailto-link" href="mailto:leoho@viken.no">leoho@viken.no</a>
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> (+47) 477 18 358
+                    </div>
+                    <!-- Her lager jeg en kolonne for kartet -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- her setter jeg inn kartet -->
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2022 Copyright: Leo Edmund Hole
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCY50Nxl9yzG9KWQS1U1LdhoL8sxIijwEk&callback=initMap&v=weekly"
+        defer>
+    </script>
+</body>
